@@ -7,7 +7,11 @@ import {
   Home,
   Signup,
   Login,
-  History
+  History,
+  LikedVideos,
+  VideoDetails,
+  PlaylistDetails,
+  Playlists,
 }
   from "./pages/index"
   import {ScrollToTop} from "./components/ScrollToTop";
@@ -22,10 +26,16 @@ function App() {
 
       <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/playlists" element={<Playlists />} />
       <Route path="/history" element={<History />} />
-      
+      <Route path="/liked" element={<LikedVideos/>} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/video/:videoId" element={<VideoDetails />} />
+        <Route
+          path="/playlist/:playlistId"
+          element={<PlaylistDetails />}
+        />
 
       </Routes>
       
