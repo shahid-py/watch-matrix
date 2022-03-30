@@ -24,7 +24,7 @@ export function History() {
   };
 
   useEffect(() => {
-    document.title = "Pikachu | History"
+    document.title = "Matrix | History"
   }, [])
 
   return (
