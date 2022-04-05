@@ -10,7 +10,7 @@ export function PlaylistVideoCard({ videoItem }: VideoCardProps) {
   const {playlistId} = useParams();
   const {dispatch} = useData();
 
-  const updatePlaylist = async (e: React.SyntheticEvent, playlistId: string, ) => {
+  const updatePlaylist = async (e: React.SyntheticEvent, playlistId: string | undefined, ) => {
     e.preventDefault();
     try {
       const {

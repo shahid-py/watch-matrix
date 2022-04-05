@@ -14,12 +14,12 @@ export type Action =
     type: "CREATE_PLAYLIST";
     payload: { _id: string; name: string; video: Video };
   }
-| { type: "UPDATE_PLAYLIST"; payload: { _id: string; video: Video } }
+| { type: "UPDATE_PLAYLIST"; payload: { _id: string ; video: Video } }
 | {
     type: "UPDATE_PLAYLIST_NAME";
-    payload: { playlistId: string; name: string };
+    payload: { playlistId: string | undefined ; name: string };
   }
-| { type: "DELETE_PLAYLIST"; payload: { playlistId: string } };
+| { type: "DELETE_PLAYLIST"; payload: { playlistId: string | undefined } };
 
 
 

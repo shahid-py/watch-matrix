@@ -71,7 +71,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const signupUser: SignupUser = async (username, email, password) => {
     try {
       const {
-        data: { success, token },
+        data: { success},
       } = await axios.post(`${API_URL}/signup`, {
         username,
         email,
