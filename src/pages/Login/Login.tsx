@@ -33,7 +33,7 @@ const [password, setPassword] =useState("");
           <button
             onClick={() => {
               setEmail("test@gmail.com");
-              setPassword("test");
+              setPassword("123");
             }}
             className="btn-guest"
           >
