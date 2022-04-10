@@ -14,8 +14,8 @@ import {
   Playlists,
 }
   from "./pages/index"
+  import { PrivateRoute } from './PrivateRoute';
   import {ScrollToTop} from "./components/ScrollToTop";
-  import { PrivateRoute } from "./PrivateRoute";
 
 
 function App() {
@@ -26,13 +26,13 @@ function App() {
 
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/playlists" element={<Playlists />} />
-      <Route path="/history" element={<History />} />
-      <Route path="/liked" element={<LikedVideos/>} />
+      <PrivateRoute path="/playlists" element={<Playlists />} />
+      <PrivateRoute path="/history" element={<History />} />
+      <PrivateRoute path="/liked" element={<LikedVideos/>} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/video/:videoId" element={<VideoDetails />} />
-        <Route
+      <PrivateRoute path="/video/:videoId" element={<VideoDetails />} />
+        <PrivateRoute
           path="/playlist/:playlistId"
           element={<PlaylistDetails />}
         />
