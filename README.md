@@ -15,7 +15,7 @@ A video library app for gym freaks
 * Unit tests for playlist
 * State management with context-api
 * TypeScript for type checking
-* designed with my CSS component library - pedalUI made in vanillaCSS
+* designed with my CSS component library - [bluepillUI](https://bluepillui.netlify.app/) made in vanillaCSS
 
 # Tech-Stack
 * Typescript
